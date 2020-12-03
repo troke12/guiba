@@ -1,9 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import TopMenu from '../components/TopMenu';
-//import SideMenu from '../components/SideMenu';
+import SideMenu from '../components/MenuContent';
 import Footer from '../components/Footer';
-import MainContent from '../components/MainContent';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -16,8 +14,7 @@ function Home() {
 
   return (
     <div className={classes.root}>
-      <TopMenu />
-      <MainContent />
+      <SideMenu />
       <Footer />
     </div>
   );
